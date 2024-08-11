@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2e2e2e); /* Gradient background */
+            color: #e0e0e0; /* Light gray text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(10, 10, 60, 0.9); /* Dark Blue */
+            color: #E0E0E0; /* Light Gray */
+            padding: 20px 0;
+            border-bottom: 3px solid #1F2A5A; /* Medium Blue */
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        header .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #E0E0E0;
+            animation: textGlow 2s infinite alternate;
+        }
+
+        .about-us {
+            background: rgba(30, 30, 63, 0.9); /* Very Dark Blue */
+            color: #E0E0E0; /* Light Gray */
+            padding: 40px 20px;
+            margin: 20px auto;
+            border: 1px solid #333;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .about-us h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1F2A5A; /* Medium Blue */
+            padding-bottom: 10px;
+            text-align: center;
+            color: #FF007F; /* Accent color */
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        .owner-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .owner-info img {
+            max-width: 200px;
+            border-radius: 50%;
+            border: 4px solid #1F2A5A; /* Medium Blue */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: spin 10s linear infinite; /* Spinning effect */
+        }
+
+        .owner-info img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+        }
+
+        .owner-info div {
+            max-width: 600px;
+        }
+
+        .owner-info h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #FF007F; /* Accent color */
+            animation: colorChange 2s infinite alternate;
+        }
+
+        .owner-info p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #FF007F; /* Accent color */
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #1F2A5A; /* Medium Blue */
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #FF007F; /* Accent color */
+            text-shadow: 0 0 5px #FF007F; /* Glowing effect */
+        }
+
+        footer {
+            background-color: #1F2A5A; /* Medium Blue */
+            color: #E0E0E0; /* Light Gray */
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 5px #FF007F, 0 0 10px #FF007F, 0 0 15px #FF007F, 0 0 20px #FF007F;
+            }
+            100% {
+                text-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 30px #FF007F, 0 0 40px #FF007F;
+            }
+        }
+
+        @keyframes colorChange {
+            0% { color: #FF007F; }
+            50% { color: #FF9F00; }
+            100% { color: #7F00FF; }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="about-us">
+            <h1>Meet the Founder</h1>
+            <div class="owner-info">
+                <img src="ethical-aryan.jpg" alt="Ethical ARYAN">
+                <div>
+                    <h2>Ethical ARYAN</h2>
+                    <p>Ethical ARYAN is the visionary behind this website, specializing in web design with a unique flair for creating engaging and visually stunning interfaces. With a deep background in ethical hacking and professional web design, Ethical ARYAN merges technical expertise with creative skills to deliver exceptional web experiences.</p>
+                    <p>As a professional in the field, Ethical ARYAN ensures that every aspect of the website is meticulously crafted for both aesthetics and functionality. The dedication to excellence drives the mission to provide high-quality web solutions.</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Phone: <a href="tel:+91979082730">7979082730</a></p>
+                <p>Email: <a href="mailto:ethicalaryan@gmail.com">ethicalaryan@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 GameWorld. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Additional styles for About Us page */
+
+#about-us {
+    background: rgba(255, 255, 255, 0.1);
+    border: #333 1px solid;
+    margin-bottom: 20px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+#about-us h2 {
+    font-size: 2em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ff6f61;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#about-us .about-container {
+    padding: 20px;
+}
+
+#about-us .about-container h3 {
+    font-size: 1.5em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+#about-us .about-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaZerGames</title>
+    <link rel="stylesheet" href="dss.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://cdn.pixabay.com/video/2016/11/04/6266-190550868_large.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <div class="container">
+            <h1 class="animated-heading">LaZerGames</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Search games...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="game-list">
+            <h2>Games List</h2>
+            <div class="games-container" id="games-container">
+                <!-- Games will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="iframe-section">
+            <h2>More Games by 7laucher try for free!!</h2>
+            <div class="iframe-container">
+                <iframe src="https://se7en.ws/games/?lang=en" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LaZerGames. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="ht.js"></script>
+</body>
+</html>
